@@ -35,19 +35,14 @@
   code .
 ```
 
-3. Install all the dependencies
 
-```sh
-  go mod tidy
-```
-
-4. Menjalankan Database PostgreSQL dengan Docker
+3. Menjalankan Database PostgreSQL dengan Docker
 
 ```sh
 docker run --name postgres_laris -p 54321:5432 -e POSTGRES_PASSWORD=1 -d postgres
 ```
 
-5. Jalankan Migrasi Database
+4. Jalankan Migrasi Database
 
 Untuk mereset dan menjalankan migrasi:
 
@@ -55,7 +50,7 @@ Untuk mereset dan menjalankan migrasi:
 make migrate:reset
 ```
 
-6. Run the program
+5. Run the program
 
 ```sh
   node index.js
