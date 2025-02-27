@@ -58,7 +58,7 @@ make migrate:reset
 6. Run the program
 
 ```sh
-  go run main.go
+  node index.js
 ```
 
 | Parameter       | Type     | Description                        |
